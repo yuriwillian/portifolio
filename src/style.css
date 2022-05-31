@@ -1,0 +1,327 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+
+@font-face {
+    font-family: Bungee;
+    src: url(/fonts/BungeeLayers-Regular.otf)
+}
+
+body {
+    background-color: rgb(226, 226, 226)    ;
+}
+
+.header{
+    background-color: #43355a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+.menu {
+    display: flex;
+}
+
+.header a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-family: Bungee;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.btnMenu {
+    display: none;
+}
+
+.menuOculto {
+    position: absolute;
+    border-radius: 100px;
+    display: none;
+    background-color: white;
+    width: 300px;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px;
+    
+}
+
+.menuOculto a {
+    padding: 5px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: #43355a;;
+    display: block;
+    font-family: Bungee;
+}
+
+.menuOculto a:hover {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-family: Bungee;
+    background-color: #43355a;
+}
+
+
+
+.btnMenu div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+@media (max-width: 990px) {
+    #menu{display: none;}
+    .btnMenu{display: block;}
+}
+
+.quemSouEu {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(226, 226, 226);
+}
+
+.quemSouEu img {
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+
+.btnContato {
+    margin-top: 20px;
+    width: 200px;
+    font-family: Bungee;
+    background-color: #43355a;
+    color: white;
+    border-radius: 100px;
+}
+
+.btnContato:hover {
+    background-color: white; 
+
+    color: #43355a;
+
+    transition: 0.5s;
+
+    opacity: 0.7;
+}
+
+.dadosPessoais {
+    padding: 10px;
+}
+
+.dadosPessoais img {
+    padding: 10px;
+}
+
+.biografia {
+    margin: 0;
+    background-color: rgb(226, 226, 226);
+    color: #43355a;
+    text-align: center;
+    padding: 20px;
+}
+
+.biografia h1 {
+    font: normal 30pt Bungee;
+}
+
+.projetos {
+    margin: 0;
+    background-color: #43355a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.projetos h1 {
+    font: normal 30pt Bungee;
+}
+
+.projeto img {
+    border-radius: 100px;
+    margin-top: 100px;
+}
+
+.projeto input{
+    margin-top: 20px;
+    color: #43355a;
+    background-color: white;
+    font-family: Bungee;
+    width: 200px;
+    border-radius: 100px;
+
+}
+
+.projeto input:hover {
+    color: white;
+    background-color: #43355a;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+
+
+.projeto p {
+    margin-top: 15px;
+}
+
+.carreira {
+    margin: 0;
+    background-color: #43355a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.carreira h1 {
+    font: normal 30pt Bungee;
+}
+
+.nomeEmpresa {
+    margin-top: 20px;
+    font: oblique 20pt Bungee;
+}
+
+.cargo {
+    margin-top: 20px;
+    font: normal 12pt Bungee;
+}
+
+.detalhesDoCargo {
+    margin-top: 10px;
+}
+
+.tecnologias {
+    background-color: rgb(226, 226, 226);
+    color: #43355a;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+}
+
+.conhecimentos {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tecnologias    h1 {
+    font: normal 30pt Bungee;
+
+}
+
+.conhecimento {
+    margin: auto;
+}
+
+.formulario {
+    margin: 0;
+    background-color: #43355a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.formulario h1{
+    font: normal 30pt Bungee;
+}
+
+.formulario p {
+    font: normal 20pt Bungee;
+}
+
+.formulario input {
+    border-radius: 100px;
+    padding: 5px;
+}
+
+#btnFormulario {
+    font: normal 15pt Bungee;
+    color: #43355a;
+    background-color: white;
+}
+
+#btnFormulario:hover {
+    background-color: #43355a; 
+
+    color: white;
+
+    transition: 0.5s;
+
+    opacity: 0.7;
+}
+
+.rodape {
+    margin: 0;
+    background-color: rgb(226, 226, 226);
+    flex-wrap: wrap;
+    color: #43355a;
+    text-align: center;
+    padding: 50px;
+}
+
+.contatoRodape {
+    text-align: left;
+    flex-wrap: nowrap;
+
+}
+
+/*-------------Pagina de Obrigado--------------*/
+
+.obrigado {
+    text-align: center;
+}
+
+.obrigado h1 {
+    margin-top: 30px;
+    font: normal 30pt Bungee;
+    color: #43355a;
+}
+
+.obrigado p {
+    margin-top: 20px;
+    font: normal 20pt Bungee;
+    color: #43355a;
+    background-color: white;
+}
+
+.obrigado input {
+    font: normal 20pt Bungee;
+    width: 250px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 100px;
+    color: white;
+    background-color: #43355a   ;
+}
+
+.obrigado input:hover {
+    font: normal 20pt Bungee;
+    width: 250px;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 100px;
+    color: #43355a;
+    background-color: white;
+}
+
+#rodapeObrigado {
+    margin-top: 100px;
+    background-color: #43355a;
+    color: white;
+}

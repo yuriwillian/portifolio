@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="main.js"></script>
+
+    <header class="header">
+        <a href="/src/">Yuri Willian</a>
+        <ul class="menu" id="menu">
+            <li><a href="#biografia">Quem Sou Eu?</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#carreira">Carreira</a></li>
+            <li><a href="#tecnologias">Tecnologias</a></li>
+        </ul>
+        <div class="btnMenu" onclick="abrirMenu()" onmouseleave="esconderMenu()" id="btnMenu">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+    <div class="menuOculto" id="menuOculto" onmouseleave="esconderMenu()">         
+        <ul>
+            <li><a href="#biografia">Quem Sou Eu?</a></li>
+
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#carreira">Carreira</a></li>
+            <li><a href="#tecnologias">Tecnologias</a></li>
+        </ul>
+    </div>
+
+    <div class="obrigado">
+        <h1>Show! Em breve entrarei em contato :)</h1>
+        <p>Se quiser voltar ao portifólio basta clicar no botão abaixo:</p>
+        <a href="/src/"><input type="button" value="Portifólio"></a>
+    </div>
+
+
+
+    <footer class="rodape" id="rodapeObrigado">
+        <div class="contatoRodape">
+            <h1>Entre em contato:</h1>
+            <div class="redesRodape">
+                <a href="https://github.com/yuriwillian" target="_blank"><img src="/fotos/github-icon.svg"></a> 
+                <a href="https://linkedin.com/" target="_blank"><img src="/fotos/linkedin-icon.png"></a>
+                <!--Fazer o href inciar um email para mim-->
+                <a href="ENVIAR MENSAGEM PARA MIM" target="_blank"><img src="/fotos/gmail-icon.png"></a>
+            </div>
+            Email: <a href="mailto:yuriwilian@gmail.com?subject=Olá%20Yuri">yuriwilian@gmail.com</a>
+
+        </div>
+        
+        <p>&copy;Yuri Willian</p>
+
+    </footer>
+</body>
+</html>

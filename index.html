@@ -1,272 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuri Willian</title>
+    <title>Yuri Willian | Software Engineer & Problem Solver</title>
+    <meta name="description" content="Desenvolvedor Front-End com experiência em Angular na NTT Data e suporte crítico no Mega Tejotão. Especialista em resolver problemas complexos.">
     <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
-    <script src="/src/main.js"></script>
+    <script src="/src/main.js" defer></script>
+
     <header class="header">
-        <a href="/">Yuri Willian</a>
-        <ul class="menu" id="menu">
-            <li><a href="#biografia">Quem Sou Eu?</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#carreira">Carreira</a></li>
-            <li><a href="#tecnologias">Tecnologias</a></li>
-        </ul>
-        <div class="btnMenu" onclick="abrirMenu()" ondblclick="esconderMenu()" id="btnMenu">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </header>
-    <div class="menuOculto" id="menuOculto" onmouseleave="esconderMenu()">         
-        <ul>
-            <li><a href="#biografia">Quem Sou Eu?</a></li>
-
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#carreira">Carreira</a></li>
-            <li><a href="#tecnologias">Tecnologias</a></li>
-        </ul>
-    </div>
-
-    <div class="quemSouEu" onclick="esconderMenu()">
-        <div>
-            <img src="/fotos/perfil.png" class="perfil">
-            <h2 class="nome">
-                Olá 😊, meu nome é Yuri Willian e ajudo pessoas 
-                resolvendo problemas de tecnologia de forma simples e
-                criativa.
-            </h2>
-
-            <a href="#formulario"><input type="button" value="Diga 'Olá'" class="btnContato"></a>
-
-            <p class="dadosPessoais">
-                <h2>Minhas redes sociais:</h2>
-                <br>
-                <a href="https://github.com/yuriwillian" target="_blank"><img src="/fotos/github-icon.svg"></a> 
-                <a href="https://www.linkedin.com/in/yuri-willian-rodrigues-pereira-da-silva-9a5002180/" target="_blank"><img src="/fotos/linkedin-icon.png"></a>
-                <!--Fazer o href inciar um email para mim-->
-            </p>
-        </div>
-    </div>
-
-
-        <div class="projetos" id="projetos">
-            <h1>Projetos</h1>
-
-            <div class="projeto">
-                <img src="/fotos/logo-luety-gallery.png">
-                <br>
-    
-                <p>
-                    ART Luety Gallery é uma galeria de arte online que vende artes originais diretamente dos artistas que são apaixonados
-                     pelo que fazem ;)
-                </p>
-    
-                <a href="https://art-luety-gallery.vercel.app/" target="_blank"><input type="button" value="Ver Projeto"></a>
-            </div>
-    
-            <br>
-    
-            <div class="projeto">
-                <img src="/fotos/logo-negro-joya.png">
-                <br>
-    
-                <p>
-                    Negro Joya é um cantor brasileiro que realiza shows na europa.
-                     Ele precisava de um site onde as pessoas interessadas deixam
-                     informações de contato para marcarem um show.
-                </p>
-    
-                <a href="https://negro-joya.vercel.app/" target="_blank"><input type="button" value="Ver Projeto"></a>
-            </div>
-    
-            <br>
-
-        <div class="projeto">
-            <img src="/fotos/logo-caminhos-do-senhor.png">
-            <br>
-
-            <p>
-                O Projeto Caminhos do Senhor é uma campanha beneficente feita para construir um lugar para as crianças aprenderem,
-                 brincarem e se alimentarem em um ambiente seguro e longe das ruas. Pretendo ampliar o projeto criando um plano de
-                 assinatura para que assinantes contribuam mensalmente com o cuidado das crianças.
-            </p>
-            <a href="https://caminhos-do-senhor.vercel.app/" target="_blank"><input type="button" value="Ver Projeto"></a>
-        </div>
-
-    </div>
-    <div class="biografia" id="biografia">
-        <h1>Quem sou eu?</h1>
-        <p>
-            Eu sou apaixonado por tecnologia desde muito cedo, quando surgiu uma oportunidade de me aprofundar no assunto
-            em 2016 com um curso técnico eu me aprofundei. Iniciei o curso de Programação em 2016 e no ano seguinte
-            iniciei o curso mais focado para o hardware e redes: Tec. em Montagem e Manutenção.
-            Em 2017 me juntei a equipe do curso na área pedagógica como monitor. Além de monitor de sala eu também era responsável pela manutenção nos computadores,
-            realizando auditorias e manutenções dentro da empresa. 
-
-            <br><br>
-
-            Saí de lá em 2018 por motivos geográficos, agradeci o conhecimento ali aprendido e entrei no Mega Tejotão no
-            dia 01/02/18 como empacotador e em um ano fui promovido a Assistente Administrativo, onde eu era 
-            responsável por checar se os fornecedores estavam entregando verdadeiramente o que foi solicitado comparando o pedido com a NFe.
-            Poucos meses depois conquistei o cargo de suporte de T.I sendo responsável por toda a parte tecnológica do
-            mercado. Tanto Hardware como Software, Infraestrutura de Rede e Firewall. 
-
-            <br><br> 
+        <nav class="nav-container">
+            <a href="/" class="logo"><strong>Yuri Willian</strong></a>
             
-            Após isso me tornei Consultor técnico PJ da empresa em 09/2020 eu prestava consultoria para o time de 
-            tecnologia auxiliando na resolução de problemas e disponibilizando Know How ao time.  
-            Atualmente sou freelancer, procuro estar sempre atualizando meu portifólio com meus útimos trabalhos.
-             <a href="#projetos">clique aqui</a> ou vá até o menu e clique em "projetos" para ver meus últimos trabalhos.
+            <ul class="menu" id="menu">
+                <li><a href="#biografia">História</a></li>
+                <li><a href="#carreira">Experiência</a></li>
+                <li><a href="#projetos">Portfólio</a></li>
+                <li><a href="#tecnologias">Stack</a></li>
+            </ul>
 
-            <br><br> 
+            <button class="btnMenu" onclick="toggleMenu()" aria-label="Abrir Menu" id="btnMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
 
-            Busco minha primeira oportunidade CLT para ter mais conhecimento sobre metodologias ágeis e desenvolvimento
-            em equipe. Quero servir como desenvolvedor júnior utilizando os conhecimentos acima adquiridos e evoluir
-            cada vez mais na habilidade de solucionar problemas!
-        </p>
-
-        <a href="#formulario"><input type="button" value="Fale comigo" class="btnContato"></a>
-    </div>
-
-    <div class="carreira" id="carreira">
-        <h1>Carreira Profissional</h1>
-
-        <div class="empresa">
-            <h2 class="nomeEmpresa">Mega Tejotão</h2>
-
-            <div class="cargoCard">
-                <h3 class="cargo">Consultor técnico PJ</h3>
-
-                <details class="detalhesDoCargo">
-                    <ul>
-                        <p class="periodo"><strong>Periodo:</strong> 09/2020 - 02/2022</p>
-                        <p class="função">
-                            <strong>O que eu fazia:</strong>
-                            <br>
-                            Eu prestava consultoria para o time de tecnologia auxiliando na resolução de problemas e disponibilizando Know How ao time.
-                        </p>
-                    </ul>
-                </details>
-            </div>
-
-            <br>
-
-            <div class="cargoCard">
-                <h3 class="cargo">Suporte de T.I</h3>
-
-                <details class="detalhesDoCargo">
-                    <ul>
-                    <p class="periodo"><strong>Periodo:</strong> 02/2018 - 09/2020</p>
-                    <p class="função">
-                        <strong>O que eu fazia:</strong>
-                        <br>
-                        Eu era responsável por resolver todos os problemas de Hardware, Software, Redes, Virtual machines e VPN.
-                    </p>
-                    </ul>
-                </details>
-            </div>
-        </div>
-
-        <br><br>
-
-        <div class="empresa">
-            <h2 class="nomeEmpresa">Prepara Cursos</h2>
-
-            <div class="cargoCard">
-                <h3 class="cargo">Monitor de Sala</h3>
-
-                <details class="detalhesDoCargo">
-                    <ul>
-                        <p class="periodo"><strong>Periodo:</strong> 03/2016 - 12/2017</p>
-                        <p class="função">
-                            <strong>O que eu fazia:</strong>
-                            <br>
-                            Eu era responsável por monitorar a sala, tirar dúvidas dos alunos e resolver quaisquer problema técnico que ocorria em suas máquinas.
-                        </p>
-                    </ul>
-                </details>
-            </div>
-        </div>
+    <main onclick="esconderMenu()">
         
+        <section class="hero-section">
+            <div class="container">
+                <img src="/fotos/perfil.png" alt="Foto de Perfil Yuri Willian" class="perfil-img">
+                <h1 class="headline">
+                    Resolvo problemas de tecnologia com código sólido e visão de negócio.
+                </h1>
+                <p class="subheadline">
+                    Ex-NTT Data | Especialista Angular | Veterano de Infraestrutura
+                </p>
 
+                <div class="social-links">
+                    <a href="https://github.com/yuriwillian" target="_blank" aria-label="GitHub">
+                        <img src="/fotos/github-icon.svg" alt="GitHub">
+                    </a> 
+                    <a href="https://www.linkedin.com/in/yuri-willian-rodrigues-pereira-da-silva-9a5002180/" target="_blank" aria-label="LinkedIn">
+                        <img src="/fotos/linkedin-icon.png" alt="LinkedIn">
+                    </a>
+                    <a href="mailto:seuemail@provedor.com" aria-label="Enviar Email">
+                        <img src="/fotos/mail-icon.svg" alt="Email"> </a>
+                </div>
 
-    </div>
-    
-   
-
-
-    
-
-    <div class="tecnologias" id="tecnologias">
-            <h1>Tecnologias que eu utilizo:</h1>
-        <div class="conhecimentos">
-            <div class="conhecimento">
-                <p>Javascript</p>
-                <img src="/fotos/javascript-icon.png">
+                <a href="#formulario" class="btn-primary">Solicitar Missão (Diga Olá)</a>
             </div>
+        </section>
 
-            <br>
-
-            <div class="conhecimento">
-                <p>CSS3</p>
-                <img src="/fotos/css3-icon.png">
+        <section id="biografia" class="section-padding">
+            <div class="container">
+                <h2>A Trajetória</h2>
+                <div class="bio-text">
+                    <p>Minha escola foi o campo de batalha. Comecei em 2016 desmontando máquinas e entendendo a fiação lógica das redes. Em 2018, no <strong>Mega Tejotão</strong>, fui de empacotador a suporte de TI em tempo recorde, assumindo a responsabilidade por toda a infraestrutura, firewalls e sistemas críticos de uma operação que não pode parar.</p>
+                    <p>Essa base "raiz" me deu a resiliência necessária para chegar à <strong>NTT DATA</strong> como desenvolvedor. Hoje, não apenas escrevo código em Angular; eu entendo como esse código impacta o hardware, a rede e, principalmente, o lucro do cliente.</p>
+                </div>
             </div>
+        </section>
 
-            <br>
+        <section id="carreira" class="section-padding bg-light">
+            <div class="container">
+                <h2>Linha de Frente (Experiência)</h2>
+                
+                <article class="experience-card">
+                    <div class="exp-header">
+                        <h3>Programador Front-End</h3>
+                        <span>NTT DATA Brasil</span>
+                    </div>
+                    <p>Desenvolvimento de soluções escaláveis em Angular para grandes players do mercado. Foco em performance e arquitetura limpa.</p>
+                </article>
 
-            <div class="conhecimento">
-                <p>HTML5</p>
-                <img src="/fotos/html5-icon.png">
+                <article class="experience-card">
+                    <div class="exp-header">
+                        <h3>Suporte de T.I / Consultor PJ</h3>
+                        <span>Mega Tejotão</span>
+                    </div>
+                    <p>Responsável por manter o coração tecnológico da empresa batendo. Manutenção de servidores, redes, VMs e suporte crítico de software.</p>
+                </article>
             </div>
+        </section>
 
-            <div class="conhecimento">
-                <p>Angular 13</p>
-                <img src="/fotos/angular-icon.png">
+        <section id="projetos" class="section-padding">
+            <div class="container">
+                <h2>Missões Cumpridas (Projetos)</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <img src="/fotos/logo-luety-gallery.png" alt="Luety Gallery">
+                        <h3>Art Luety Gallery</h3>
+                        <p>E-commerce de arte focado em conexão direta entre artista e colecionador.</p>
+                        <a href="https://art-luety-gallery.vercel.app/" target="_blank" class="btn-secondary">Ver Operação</a>
+                    </article>
+
+                    </div>
             </div>
+        </section>
 
-
-        </div>
-    </div>
-
-    
-
-    <form action="https://api.staticforms.xyz/submit" id="formulario" class="formulario" method="post">
-        <h1>Fale comigo :)</h1>
-        <br>
-        <p>Digite seu nome:</p>
-        <input type="text" placeholder="Digite seu nome aqui" name="name" required>
-        <p>Digite seu melhor email:</p>
-        <input type="email" placeholder="Digite seu email aqui" name="email" required>
-        <p>Digite seu telefone:</p>
-        <input type="number" placeholder="Digite seu número aqui" name="phone" required>
-        <input type="hidden" name="accessKey" value="23a7ae0c-bb87-4670-9c7a-117c26f0f41c">
-        <input type="hidden" name="redirectTo" value="http://localhost:5501/src/obrigado.html">
-        <br><br>
-        <input type="submit" value="Clique aqui para falarmos" id="btnFormulario">
-    </form>
-
-    <footer class="rodape">
-        <div class="contatoRodape">
-            <h1>Entre em contato:</h1>
-            <div class="redesRodape">
-                <a href="https://github.com/yuriwillian" target="_blank"><img src="/fotos/github-icon.svg"></a> 
-                <a href="https://www.linkedin.com/in/yuri-willian-rodrigues-pereira-da-silva-9a5002180/" target="_blank"><img src="/fotos/linkedin-icon.png"></a>
-                <!--Fazer o href inciar um email para mim-->
+        <section id="tecnologias" class="section-padding">
+            <div class="container">
+                <h2>Armamento (Tech Stack)</h2>
+                <div class="tech-icons">
+                    <div class="tech-item"><img src="/fotos/angular-icon.png" alt="Angular"><span>Angular</span></div>
+                    <div class="tech-item"><img src="/fotos/javascript-icon.png" alt="JS"><span>Javascript</span></div>
+                    <div class="tech-item"><img src="/fotos/html5-icon.png" alt="HTML"><span>HTML5/CSS3</span></div>
+                </div>
             </div>
+        </section>
 
-        </div>
-        
-        <p>&copy;Yuri Willian</p>
+        <section id="formulario" class="section-padding">
+            <div class="container">
+                <h2>Iniciar Contato</h2>
+                <form action="https://api.staticforms.xyz/submit" method="post" class="contact-form">
+                    <input type="text" name="name" placeholder="Seu Nome" required>
+                    <input type="email" name="email" placeholder="Seu melhor e-mail" required>
+                    <textarea name="message" placeholder="Qual o seu problema tecnológico hoje?"></textarea>
+                    
+                    <input type="hidden" name="accessKey" value="23a7ae0c-bb87-4670-9c7a-117c26f0f41c">
+                    <input type="submit" value="Enviar Mensagem" class="btn-primary">
+                </form>
+            </div>
+        </section>
+    </main>
 
+    <footer class="footer">
+        <p>&copy; 2026 Yuri Willian | Desenvolvido com resiliência.</p>
     </footer>
-
-
-
 </body>
 </html>

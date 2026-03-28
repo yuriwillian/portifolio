@@ -194,10 +194,13 @@ h2 {
 .btn-primary, .btn-secondary {
     padding: 12px 24px;
     border-radius: 4px;
-    text-decoration: none;
     font-weight: bold;
     display: inline-block;
     transition:
+    background: #fff !important;
+    transform: translateY(-2px);
+}
+
 
 
 

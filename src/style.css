@@ -1,9 +1,9 @@
 /* --- CONFIGURAÇÃO DE BASE (VETERANO) --- */
 :root {
-    --primary: #1a1a1a;    /* Escuro Profundo */
-    --accent: #d4a373;     /* Tom de Bronze/Guerra (Pode trocar por um Azul se preferir) */
-    --text: #f4f4f4;
-    --bg-light: #252525;
+    --primary: #121212;    /* Fundo Quase Preto */
+    --accent: #d4a373;     /* Bronze/Guerra */
+    --text: #e0e0e0;       /* Cinza Claro (melhor que branco puro) */
+    --bg-card: #1e1e1e;    /* Fundo dos Cards */
     --transition: all 0.3s ease;
 }
 
@@ -27,10 +27,10 @@ body {
     padding: 0 20px;
 }
 
-/* --- HEADER & NAV --- */
+/* --- HEADER & NAV (Ajuste Mobile) --- */
 .header {
-    background: rgba(26, 26, 26, 0.95);
-    padding: 20px 0;
+    background: rgba(18, 18, 18, 0.95);
+    padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -41,29 +41,27 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--accent);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .menu {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 20px;
 }
 
 .menu a {
     color: var(--text);
     text-decoration: none;
-    font-weight: 500;
+    font-size: 0.9rem;
     transition: var(--transition);
 }
 
@@ -71,117 +69,132 @@ body {
     color: var(--accent);
 }
 
-/* --- HERO SECTION --- */
+/* --- HERO SECTION (Print 14) --- */
 .hero-section {
-    padding: 100px 0;
+    padding: 80px 0 60px;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/fotos/bg-hero.jpg'); /* Se tiver um bg */
-    background-size: cover;
 }
 
 .perfil-img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    border: 4px solid var(--accent);
-    margin-bottom: 20px;
+    border: 3px solid var(--accent);
+    margin-bottom: 25px;
     object-fit: cover;
 }
 
 .headline {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     margin-bottom: 15px;
     color: #fff;
+    font-weight: 800;
 }
 
 .subheadline {
-    font-size: 1.2rem;
-    color: #bbb;
-    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #aaa;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* --- BUTTONS --- */
-.btn-primary {
-    background: var(--accent);
-    color: #1a1a1a;
-    padding: 15px 35px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    transition: var(--transition);
-}
-
-.btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(212, 163, 115, 0.4);
-}
-
-/* --- EXPERIÊNCIA & CARDS --- */
+/* --- EXPERIÊNCIA, PROJETOS & STACK --- */
 .section-padding {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
-.bg-light {
-    background-color: var(--bg-light);
+h2 {
+    font-size: 1.8rem;
+    color: var(--accent);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .experience-card, .project-card {
-    background: #333;
-    padding: 30px;
+    background: var(--bg-card);
+    padding: 25px;
     border-radius: 8px;
-    margin-bottom: 20px;
-    border-left: 5px solid var(--accent);
-    transition: var(--transition);
-}
-
-.experience-card:hover {
-    background: #3d3d3d;
+    margin-bottom: 15px;
+    border-left: 4px solid var(--accent);
 }
 
 .exp-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 10px;
 }
 
-/* --- TECH ICONS --- */
+.exp-header h3 { font-size: 1.2rem; color: #fff; }
+.exp-header span { font-size: 0.9rem; color: #aaa; }
+
+/* Correção Print 11 (Centralização e Layout do Projeto) */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo no mobile */
+    text-align: center;
+}
+
+.project-card img {
+    max-width: 120px;
+    margin-bottom: 15px;
+}
+
+/* Correção Print 12 (Layout da Stack) */
 .tech-icons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     text-align: center;
 }
 
 .tech-item img {
-    width: 60px;
-    filter: grayscale(100%);
-    transition: var(--transition);
+    height: 50px;
+    width: auto;
+    max-width: 100%;
 }
 
-.tech-item:hover img {
-    filter: grayscale(0%);
+.tech-item span {
+    font-size: 0.9rem;
+    color: #bbb;
 }
 
-/* --- FORMULÁRIO --- */
+/* --- FORMULÁRIO (Correção Print 13) --- */
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
 .contact-form input, .contact-form textarea {
     padding: 15px;
-    background: #333;
-    border: 1px solid #444;
+    background: var(--bg-card);
+    border: 1px solid #333;
     color: #fff;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%; /* Garante que ocupe toda a largura */
 }
 
-/* --- MOBILE --- */
-@media (max-width: 768px) {
-    .menu { display: none; } /* O main.js vai controlar o menu mobile agora */
-    .headline { font-size: 2rem; }
-}
+/* --- BUTTONS --- */
+.btn-primary, .btn-secondary {
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition:

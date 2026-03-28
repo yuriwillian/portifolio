@@ -198,3 +198,54 @@ h2 {
     font-weight: bold;
     display: inline-block;
     transition:
+
+
+
+
+/* --- AJUSTE DOS LINKS SOCIAIS (Círculo Vermelho) --- */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.social-icon {
+    width: 32px; /* Tamanho padrão para mobile */
+    height: 32px;
+    transition: var(--transition);
+    filter: brightness(0) invert(1); /* Isso transforma ícones pretos em brancos */
+}
+
+/* O ícone do LinkedIn já é azul, então tiramos o filtro dele */
+.social-links a[aria-label="LinkedIn"] .social-icon {
+    filter: none;
+    width: 35px; /* LinkedIn costuma ser um pouco menor visualmente */
+}
+
+.social-links a:hover .social-icon {
+    transform: scale(1.2);
+    filter: brightness(0) invert(1) drop-shadow(0 0 5px var(--accent));
+}
+
+/* --- BOTÃO PRINCIPAL (Removendo o azul de link) --- */
+.btn-primary {
+    background: var(--accent) !important;
+    color: #121212 !important; /* Texto escuro sobre o bronze */
+    padding: 16px 32px;
+    border-radius: 4px;
+    text-decoration: none !important; /* Remove o sublinhado azul */
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.btn-primary:hover {
+    background: #fff !important;
+    transform: translateY(-2px);
+}
+
